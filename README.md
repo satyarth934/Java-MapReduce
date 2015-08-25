@@ -1,5 +1,5 @@
 # Java-MapReduce
-A few Java Map-Reduce programs to read and analyse data from a CSV files.
+A few Java Map-Reduce programs to read and analyse data from CSV files.
 
 
 # Data set Description:
