@@ -1,0 +1,16 @@
+-- Loading the files into HDFS 
+hdfs dfs -put /home/edureka/Desktop/Usecase2/BX-CSV-Dump/BX-Book-Ratings.csv project/BX-Book-Ratings.csv
+hdfs dfs -put /home/edureka/Desktop/Usecase2/BX-CSV-Dump/BX-Books.csv project/BX-Books.csv
+hdfs dfs -put /home/edureka/Desktop/Usecase2/BX-CSV-Dump/BX-Users.csv project/BX-Users.csv
+
+-- Task 1
+cd ~/Desktop/Project\ Files/
+hadoop jar FinalProj.jar FrequencyofBooks project/BX-Books.csv project/output/task1
+
+-- Task 2
+cd ~/Desktop/Project\ Files/
+hadoop jar FinalProj.jar MaxBooks project/BX-Books.csv project/output/task2
+
+-- Task 3
+cd ~/Desktop/Project\ Files/
+hadoop jar FinalProj.jar RankBooks project/BX-Books.csv project/BX-Book-Ratings.csv project/output/task3_temp project/output/task3
