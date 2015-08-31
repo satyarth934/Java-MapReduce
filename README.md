@@ -1,5 +1,5 @@
-# Java-MapReduce
-A few Java Map-Reduce programs to read and analyse data from CSV files.
+# Analyze Book-Crossing Data(Java-MapReduce)
+A few Java Map-Reduce programs to read and analyse Book-Crossing data.
 
 
 # Data set Description:
