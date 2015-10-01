@@ -1,0 +1,19 @@
+-- Loading the files into HDFS 
+hdfs dfs -put ~/Desktop/Projects/AirlineAnalysis/Air-datasets/airports_mod.dat /projects/AirlineAnalysis/Air-datasets
+hdfs dfs -put ~/Desktop/Projects/AirlineAnalysis/Air-datasets/Final_airlines /projects/AirlineAnalysis/Air-datasets
+hdfs dfs -put ~/Desktop/Projects/AirlineAnalysis/Air-datasets/routes.dat /projects/AirlineAnalysis/Air-datasets
+
+-- Task 1 --
+hadoop jar ~/Desktop/Projects/AirlineAnalysis/AirlineAnalysis.jar IndianAirports projects/AirlineAnalysis/Air-datasets/airports_mod.dat projects/AirlineAnalysis/output/IndianAirports
+
+-- Task 2 --
+hadoop jar ~/Desktop/Projects/AirlineAnalysis/AirlineAnalysis.jar ZeroStops projects/AirlineAnalysis/Air-datasets/Final_airlines projects/AirlineAnalysis/Air-datasets/routes.dat projects/AirlineAnalysis/output/ZeroStops
+
+-- Task 3 --
+hadoop jar ~/Desktop/Projects/AirlineAnalysis/AirlineAnalysis.jar Codeshare projects/AirlineAnalysis/Air-datasets/Final_airlines projects/AirlineAnalysis/Air-datasets/routes.dat projects/AirlineAnalysis/output/Codeshare
+
+-- Task 4 --
+hadoop jar ~/Desktop/Projects/AirlineAnalysis/AirlineAnalysis.jar HighestAirport projects/AirlineAnalysis/Air-datasets/airports_mod.dat projects/AirlineAnalysis/output/HighestAirport
+
+-- Task 5 --
+hadoop jar ~/Desktop/Projects/AirlineAnalysis/AirlineAnalysis.jar ActiveUSAirline projects/AirlineAnalysis/Air-datasets/Final_airlines projects/AirlineAnalysis/output/ActiveUSAirline
